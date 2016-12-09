@@ -1,0 +1,21 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<h2>Gallery</h2>
+
+
+
+<table>
+    <tbody>
+        @foreach (string picFolders in Model)
+        {
+            <tr>
+                <td>
+                    @picFolders
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
