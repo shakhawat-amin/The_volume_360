@@ -28,11 +28,13 @@ namespace the_volume_360.Controllers
           //  if (Directory.GetFiles(path, "*.jpg").Length > 0)
             //    picFolders.Add(path);
 
-            if (Directory.GetFiles(path).Length > 0)
-                Folders.Add(path);
+           //// if (Directory.GetFiles(path).Length > 0)
+           // var path1 = path + "/folder From project";
+           // Directory.CreateDirectory(path1);
+             //   Folders.Add(path);
             foreach (string dir in Directory.GetDirectories(path))
             {
-                if (Directory.GetFiles(dir).Length > 0)
+                //if (Directory.GetFiles(dir).Length > 0)
                    // Folders.Add(dir);
                 Folders.Add(new DirectoryInfo(dir).Name);
             }
